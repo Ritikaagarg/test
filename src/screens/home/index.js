@@ -6,7 +6,6 @@ import { connect } from "react-redux";
 import * as userActions from '../../store/actions/user-action-types';
 import moment from "moment";
 import { TextInput } from "react-native-gesture-handler";
-import user from "../../store/reducers/user";
 
 const Home = props => {
 
