@@ -1,10 +1,10 @@
-import { StyleSheet, Dimensions } from "react-native";
+import {StyleSheet, Dimensions} from 'react-native';
 
-const{width, height} =  Dimensions.get('window');
+const {width, height} = Dimensions.get('window');
 
-export default styles = StyleSheet.create({
+const styles = StyleSheet.create({
   itemWrapper: {
-    flexDirection: "row",
+    flexDirection: 'row',
     paddingHorizontal: 16,
     paddingVertical: 16,
     borderBottomWidth: 1,
@@ -16,27 +16,29 @@ export default styles = StyleSheet.create({
     marginRight: 16,
   },
   contentWrapper: {
-    justifyContent: "space-around",
+    justifyContent: 'space-around',
     paddingRight: 10,
-    width: width * 0.65
+    width: width * 0.65,
   },
   txtName: {
     fontSize: 16,
   },
   txtEmail: {
-    color: "#777",
+    color: '#777',
   },
   searchBox: {
-    margin: 10, 
-    borderColor: '#555', 
+    margin: 10,
+    borderColor: '#555',
     borderWidth: 1,
-    flexDirection:'row',
-    alignItems:'center'
+    flexDirection: 'row',
+    alignItems: 'center',
   },
-  searchInput:{
+  searchInput: {
     width: '80%',
-    height: height* 0.07,
-    paddingHorizontal:20,
-    fontSize: 16
-  }
+    height: height * 0.07,
+    paddingHorizontal: 20,
+    fontSize: 16,
+  },
 });
+
+export default styles;

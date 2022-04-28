@@ -1,18 +1,17 @@
-import { Provider } from 'react-redux';
-import React, { useState } from 'react';
-import { LogBox, SafeAreaView } from 'react-native';
+import {Provider} from 'react-redux';
+import React, {useState} from 'react';
+import {LogBox, SafeAreaView} from 'react-native';
 import 'react-native-gesture-handler';
-import { PersistGate } from 'redux-persist/es/integration/react';
+import {PersistGate} from 'redux-persist/es/integration/react';
 import SplashScreen from 'react-native-splash-screen';
 import Toast from 'react-native-toast-message';
 import configureStore from './store';
 import Navigator from './navigation';
 
-const { store, persistor } = configureStore();
+const {store, persistor} = configureStore();
 LogBox.ignoreAllLogs();
 
 const Src = () => {
-
   React.useEffect(() => {
     // Hide the splash screen
     const hideSplashScreen = setTimeout(() => {
@@ -25,7 +24,7 @@ const Src = () => {
   }, []);
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={{flex: 1}}>
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <Navigator />
