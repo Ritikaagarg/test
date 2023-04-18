@@ -58,7 +58,7 @@ const Home = props => {
 
   return (
     <SafeAreaView>
-      <StatusBar backgroundColor="#000" />
+      <StatusBar backgroundColor="#FFF" />
       <View style={styles.searchBox}>
         <TextInput
           style={styles.searchInput}
